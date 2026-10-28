@@ -1,0 +1,331 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOYAGE - Travel Website</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <a class="brand" href="#home">V<span>O</span>YAGE</a>
+
+        <button class="menu-toggle" id="menuToggle">☰</button>
+
+        <nav id="mainNav">
+            <a class="active" href="#home">HOME</a>
+            <a href="#destinations">DESTINATIONS</a>
+            <a href="#holidays">HOLIDAYS</a>
+            <a href="#offers">OFFERS</a>
+            <a href="#contact">CONTACT</a>
+            <a href="#search" class="search-icon"><i class="bi bi-search"></i></a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <button class="hero-arrow prev" id="prevSlide">&#10094;</button>
+
+        <div class="hero-content">
+
+            <div class="eyebrow" id="heroEyebrow">
+                DISCOVER YOUR NEXT ADVENTURE
+            </div>
+
+            <h1 id="heroTitle">
+                TO TRAVEL IS TO <span class="highlight">LIVE</span>
+            </h1>
+
+            <p id="heroSubtitle">
+                You Don't Need Magic to Disappear.
+                All you need is a destination.
+            </p>
+
+            <div class="hero-actions">
+                <a href="#destinations" class="btn btn-primary">
+                    EXPLORE DESTINATIONS →
+                </a>
+
+                <a href="#search" class="btn btn-outline">
+                    PLAN YOUR TRIP
+                </a>
+            </div>
+
+        </div>
+
+        <button class="hero-arrow next" id="nextSlide">&#10095;</button>
+
+    </section>
+
+    <!-- Travel Search -->
+    <section class="search-strip" id="search">
+
+        <form id="travelSearchForm">
+
+            <div class="search-label">
+                FIND YOUR<br>
+                <strong>HOLIDAYS</strong>
+            </div>
+
+            <label for="destination">Where</label>
+
+            <select id="destination" required>
+                <option value="">Select destination</option>
+                <option>Paris, France</option>
+                <option>Bali, Indonesia</option>
+                <option>Hong Kong & Macau</option>
+                <option>Vietnam</option>
+                <option>Dubai, UAE</option>
+                <option>Kerala, India</option>
+                <option>Maldives</option>
+                <option>Switzerland</option>
+                <option>New York, USA</option>
+                <option>Rome, Italy</option>
+            </select>
+
+            <label for="travelDate">When</label>
+
+            <input type="date" id="travelDate" required>
+
+            <button type="submit" class="search-button">
+                Search
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- Special Offers -->
+    <section class="section" id="destinations">
+
+        <div class="section-heading" id="offers">
+            <h2>SPECIAL OFFERS</h2>
+            <p>Best travel packages for your next holiday!</p>
+        </div>
+
+        <div class="destination-row">
+
+        <a href="#search" class="destination-card" data-destination="Taj Mahal, India">
+                <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523"alt="Taj Mahal, Agra, India"
+        onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/d/da/Taj-Mahal.jpg';">
+
+            <div class="card-caption">
+                <strong>Taj Mahal - India</strong>
+                <span>New Destination</span>
+            </div>
+        </a>
+
+        
+
+            <a href="#search" class="destination-card" data-destination="Rome, Italy">
+                <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=600&q=80" alt="Rome">
+                <div class="card-caption">
+                    <strong>Spectacular Rome</strong>
+                    <span>New Destination</span>
+                </div>
+            </a>
+
+            <a href="#search" class="destination-card" data-destination="Hong Kong & Macau">
+                <img src="https://images.unsplash.com/photo-1536599018102-9f803c140fc1?auto=format&fit=crop&w=600&q=80" alt="Hong Kong">
+                <div class="card-caption">
+                    <strong>Hong Kong & Macau</strong>
+                    <span>Special Offer</span>
+                </div>
+            </a>
+
+            <a href="#search" class="destination-card" data-destination="Vietnam">
+                <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=600&q=80" alt="Vietnam">
+                <div class="card-caption">
+                    <strong>Vietnam Highlights</strong>
+                    <span>New Destination</span>
+                </div>
+            </a>
+
+            <a href="#search" class="destination-card">
+                <img src="https://images.unsplash.com/photo-1474044159687-1ee9f3a51722?auto=format&fit=crop&w=600&q=80" alt="Canyon">
+                <div class="card-caption">
+                    <strong>Spectacular Canyons</strong>
+                    <span>New Destination</span>
+                </div>
+            </a>
+
+            <a href="#search" class="destination-card" data-destination="Dubai, UAE">
+                <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=600&q=80" alt="Dubai">
+                <div class="card-caption">
+                    <strong>Dubai</strong>
+                    <span>New Destination</span>
+                </div>
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Holiday Types -->
+    <section class="holiday-types" id="holidays">
+
+        <div class="section-heading light">
+            <h2>HOLIDAY TYPES</h2>
+            <p>Find the holiday that matches your dream.</p>
+        </div>
+
+        <div class="holiday-list">
+
+            <a href="#search" class="holiday-item">
+                <span><i class="bi bi-water"></i></span>
+                <small>Cruise</small>
+            </a>
+
+            <a href="#search" class="holiday-item">
+                <span><i class="bi bi-buildings"></i></span>
+                <small>City Breaks</small>
+            </a>
+
+            <a href="#search" class="holiday-item">
+                <span><i class="bi bi-heart-fill"></i></span>
+                <small>Honeymoon</small>
+            </a>
+
+            <a href="#search" class="holiday-item">
+                <span><i class="bi bi-compass"></i></span>
+                <small>Adventure</small>
+            </a>
+
+            <a href="#search" class="holiday-item">
+                <span><i class="bi bi-tree-fill"></i></span>
+                <small>Safari</small>
+            </a>
+
+            <a href="#search" class="holiday-item">
+                <span><i class="bi bi-sun"></i></span>
+                <small>Beach</small>
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Happy Clients -->
+    <section class="section testimonials">
+
+        <div class="section-heading">
+            <h2>HAPPY CLIENTS</h2>
+            <p>What customers say about us and why they love our services!</p>
+        </div>
+
+        <div class="testimonial-row">
+
+            <article class="testimonial">
+                <p>Our trip was wonderful. Everything was organised perfectly.</p>
+                <strong>Client Name</strong>
+                <small>Dubai Trip</small>
+            </article>
+
+            <article class="testimonial">
+                <p>We had an amazing holiday experience. The destinations were beautiful.</p>
+                <strong>Client Name</strong>
+                <small>Paris Holiday</small>
+            </article>
+
+            <article class="testimonial">
+                <p>We enjoyed exploring new places and making unforgettable memories.</p>
+                <strong>Client Name</strong>
+                <small>Hong Kong & Macau</small>
+            </article>
+
+            <article class="testimonial">
+                <p>A wonderful holiday with beautiful scenery and great service.</p>
+                <strong>Client Name</strong>
+                <small>Beach Holiday</small>
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+
+        <div class="footer-grid">
+
+            <section class="footer-column" id="newsletter">
+                <h3>Newsletter</h3>
+
+                <p>
+                    Subscribe to receive travel updates,
+                    exciting destinations and holiday news.
+                </p>
+
+                <form id="newsletterForm" class="newsletter-form">
+                    <input type="email" id="newsletterEmail" placeholder="Your email address" required>
+                    <button type="submit">GO</button>
+                </form>
+            </section>
+
+            <section class="footer-column">
+                <h3>Latest News</h3>
+
+                <p>Four Magical Places</p>
+                <p>Discover Amazing Views</p>
+            </section>
+
+            <section class="footer-column">
+                <h3>Tags</h3>
+
+                <div class="tags">
+                    <a href="#destinations">Destinations</a>
+                    <a href="#holidays">Holidays</a>
+                    <a href="#search">Travel</a>
+                    <a href="#offers">Offers</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </section>
+
+            <section class="footer-column">
+                <h3>Address</h3>
+
+                <p>Kerala, India</p>
+                <p>Tel: +91 815-123-4567</p>
+                <p>Email: hello@voyage.example</p>
+
+                <div class="footer-socials">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-twitter"></i>
+                    <i class="bi bi-pinterest"></i>
+                    <i class="bi bi-instagram"></i>
+                </div>
+            </section>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <nav>
+                <a href="#home">Home</a> ·
+                <a href="#destinations">Destinations</a> ·
+                <a href="#holidays">Holidays</a> ·
+                <a href="#offers">Offers</a> ·
+                <a href="#contact">Contact Us</a>
+            </nav>
+
+            <p>
+                Copyright © <span id="year"></span>
+                VOYAGE. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
